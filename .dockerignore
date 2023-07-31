@@ -1,0 +1,16 @@
+.idea
+.git
+Assets
+Library
+Logs
+obj
+ServerData
+UserSettings
+Temp
+Packages
+packages
+Project
+Build/Client
+Build/Portal
+Build/local-build-qa-00.zip
+Dockerfile
