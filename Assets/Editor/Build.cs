@@ -24,7 +24,7 @@ namespace Editor
                 target = BuildTarget.StandaloneLinux64,
                 subtarget = (int)StandaloneBuildSubtarget.Server
             };
-            var buildSummary = BuildSupernova("Master Linux Client", targetDir, buildOptions);
+            var buildSummary = BuildMe("Master Linux Client", targetDir, buildOptions);
             ReportSummary(buildSummary);
             ExitWithResult(buildSummary.result);
         }
@@ -41,7 +41,7 @@ namespace Editor
             Directory.CreateDirectory(targetDir);
         }
 
-        private static BuildSummary BuildSupernova(string buildName, string targetDir, BuildPlayerOptions buildOptions)
+        private static BuildSummary BuildMe(string buildName, string targetDir, BuildPlayerOptions buildOptions)
         {
             Clean(targetDir);
             var currentTargetGroup = EditorUserBuildSettings.selectedBuildTargetGroup;
